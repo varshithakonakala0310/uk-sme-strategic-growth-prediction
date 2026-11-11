@@ -1,0 +1,20 @@
+UK SME Strategic Growth Prediction — SYNTHETIC RECREATION RESULTS
+Dataset: synthetic, 248 SMEs, seed 42, 14 indicators, target high/low growth by median turnover growth
+Class balance high_growth: 0.500 (n_high=124, n_low=124)
+Linear regression R2 (turnover_growth, test): 0.3579
+Median turnover growth: 0.0009
+Top correlations with turnover_growth (abs):
+  profit_margin: 0.6231
+  cost_ratio: -0.6231
+  profit_per_employee_gbp: 0.4629
+  avg_profit_gbp: 0.4409
+  revenue_per_employee_gbp: 0.1827
+Model comparison (test, 25% holdout):
+  XGBoost: accuracy=0.7419 precision=0.7419 recall=0.7419 f1=0.7419
+  Logistic Regression: accuracy=0.7097 precision=0.7241 recall=0.6774 f1=0.7000
+  Random Forest: accuracy=0.6935 precision=0.7308 recall=0.6129 f1=0.6667
+  Gradient Boosting: accuracy=0.6774 precision=0.6897 recall=0.6452 f1=0.6667
+Best model by F1: XGBoost (F1=0.7419, accuracy=0.7419)
+Top features — Random Forest: cost_ratio=0.148, profit_margin=0.122, avg_profit_gbp=0.106, profit_per_employee_gbp=0.086, revenue_per_employee_gbp=0.069
+Top features — Gradient Boosting: cost_ratio=0.193, profit_margin=0.116, avg_profit_gbp=0.105, revenue_per_employee_gbp=0.103, export_share=0.090
+Top features — XGBoost: cost_ratio=0.297, profit_margin=0.128, avg_profit_gbp=0.072, profit_per_employee_gbp=0.068, revenue_per_employee_gbp=0.058
